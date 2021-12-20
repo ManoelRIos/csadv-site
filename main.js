@@ -30,3 +30,16 @@ window.addEventListener('scroll', function(){
     
   }
 })
+
+/* Testimonial carousel*/
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  mouseWheel: true,
+  Keyboard: true,
+  // Navigation arrows
+
+});
