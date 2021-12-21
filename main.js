@@ -38,8 +38,41 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
-  mouseWheel: true,
-  Keyboard: true,
+  mousewheel: {
+    releaseOnEdges: true,	
+  },
+  keyboard: true,
   // Navigation arrows
 
 });
+
+/*ScrollReveal: Mostrar elementos quando der scroll na página*/ 
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+  #about .image, #about .text,
+  #services header, #services .card,
+  #testimonials header, #testimonials .testimonials
+  #contact .text, #contact .links,
+  footer .brand, footer .social
+  `,
+  {interval: 100}
+  )
+
+  /*Back to the top button*/
+  const backToTopButton = document.querySelector('.back-to-top');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY >= 560){
+      backToTopButton.classList.add('show');
+      
+    }else{
+      backToTopButton.classList.remove('show');
+    }
+  })
+  
