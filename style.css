@@ -24,9 +24,9 @@ img{
   --header-height: 4.5rem;
 
   /*---COLORS------*/
-  --hue: 150;
+  --hue: 9;
   /*HSL color mode*/
-  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsl(var(--hue) 70% 41%);
   --base-color-second: hsl(var(--hue)65% 88%);
   --base-color-alt: hsl(var(--hue)57% 53%);
   --title-color: hsl(var(--hue)41% 10%);
@@ -145,7 +145,8 @@ body{
 
 
 /*------LOGO---------*/
-.logo{
+.logo img{
+  width: 50%;
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
 }
@@ -268,7 +269,8 @@ nav.show div.icon-close{
   margin: 0;
 }
 
-#home .image{
+#home .image {
+  width: 100%;
   position: relative;
 }
 
@@ -323,7 +325,7 @@ nav.show div.icon-close{
 
 #about .image::before{
   content: '';
-  height: 90%;
+  height: 200%;
   width: 100%;
   background: var(--base-color-second);
   position: relative;
@@ -334,7 +336,6 @@ nav.show div.icon-close{
 
 #about .image img{
   position: relative;
-
 }
 
 #about .image img,
@@ -357,6 +358,15 @@ nav.show div.icon-close{
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: .25rem .25rem 0 0;
   text-align: center;
+  cursor: pointer;
+  
+}
+.card i, h3{
+  transition: 0.6s;
+}
+
+ .card :hover{ 
+  transform: translateY(-10px);
 }
 
 .card i{
@@ -373,6 +383,7 @@ nav.show div.icon-close{
 
 /*------TESTIMONIALS---------*/
 #testimonials {
+  width: 100%;
   background: white;
 }
 
@@ -387,40 +398,7 @@ nav.show div.icon-close{
   margin-bottom: 0;
 }
 
-#testimonials blockquote{
-  padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
-}
-#testimonials blockquote p {
-  position: relative;
-  text-indent: 1rem;
-  margin-bottom: 1.5rem;
-  color: var(--title-color);
-}
 
-#testimonials blockquote p span{
-  font: 700 2.5rem serif;
-
-  position: absolute;
-  top: -0.5rem;
-  left: -1.875rem;
-  color: var(--base-color);
-}
-
-#testimonials cite{
-  display: flex;
-  align-items: center;
-  font-style: normal;  
-}
-
-#testimonials cite img{
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
-  clip-path: circle();
-  margin-right: .5rem;
-}
 
 /*SWIPER*/
 .swiper-slide{
@@ -444,6 +422,10 @@ nav.show div.icon-close{
   margin-bottom: 2rem;
 }
 
+#contact .button i{
+  padding-right: 0.5rem;
+}
+
 #contact .button i,
 #contact ul li i{
   font-size: 1.5rem;
@@ -460,6 +442,7 @@ nav.show div.icon-close{
 }
 
 #contact ul li i{
+  padding-right: 0.5rem;
   color: var(--base-color);
 }
 
@@ -600,6 +583,7 @@ footer .social a:hover{
 
   }
   #home .image{
+    width: 60%;
     order: 1;
   }
 
