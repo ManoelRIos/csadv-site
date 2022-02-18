@@ -24,9 +24,9 @@ img{
   --header-height: 4.5rem;
 
   /*---COLORS------*/
-  --hue: 9;
+  --hue: 356;
   /*HSL color mode*/
-  --base-color: hsl(var(--hue) 70% 41%);
+  --base-color: hsl(var(--hue) 73% 23%);
   --base-color-second: hsl(var(--hue)65% 88%);
   --base-color-alt: hsl(var(--hue)57% 53%);
   --title-color: hsl(var(--hue)41% 10%);
@@ -146,6 +146,7 @@ body{
 
 /*------LOGO---------*/
 .logo img{
+  padding-top: 0.3rem ;
   width: 50%;
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
@@ -153,6 +154,10 @@ body{
 
 .logo span{
   color: var(--base-color);
+}
+
+.logo-alt{
+  
 }
 
 .logo-alt span{
@@ -320,16 +325,17 @@ nav.show div.icon-close{
 }
 
 #about .image{
+  width: 100%;
   position: relative;
 }
 
 #about .image::before{
   content: '';
-  height: 200%;
+  height:100%;
   width: 100%;
   background: var(--base-color-second);
-  position: relative;
-  top: -9%;
+  position: absolute;
+  top: -20%;
   left: -27%;
   z-index: 0;
 }
@@ -350,6 +356,7 @@ nav.show div.icon-close{
 /*------SERVICES---------*/
 .cards grid{
   gap: 1.5rem;
+  
 }
 
 .card{
@@ -358,14 +365,14 @@ nav.show div.icon-close{
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: .25rem .25rem 0 0;
   text-align: center;
-  cursor: pointer;
-  
-}
-.card i, h3{
-  transition: 0.6s;
+  cursor: pointer; 
 }
 
- .card :hover{ 
+ .card:hover{
+  background: var(--base-color);
+  border-radius: .25rem .25rem 0 0;
+  text-align: center;
+  cursor: pointer;
   transform: translateY(-10px);
 }
 
@@ -374,6 +381,14 @@ nav.show div.icon-close{
   margin-bottom: 1.5rem;
   font-size:5rem;
   color: var(--base-color);
+}
+
+.card:hover i{
+  color: var(--base-color-second);
+}
+
+.card:hover h3{
+  color: var(--body-color);
 }
 
 .card .title {
@@ -583,7 +598,7 @@ footer .social a:hover{
 
   }
   #home .image{
-    width: 60%;
+    width: 100%;
     order: 1;
   }
 

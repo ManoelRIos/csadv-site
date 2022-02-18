@@ -1,7 +1,7 @@
 body{
 
   background-image: radial-gradient(
-    rgba(61, 14,19, 1),
+    rgb(61, 14, 19),
     rgba(61, 14, 1, 0.9) 
   ),
   url("images/mountains.jpg");
