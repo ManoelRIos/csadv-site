@@ -349,7 +349,6 @@ nav.show div.icon-close{
   border-radius: 0.25rem;
 }
 #about .text{
-  text-align: justify;
   margin-left:1.5rem;
   margin-right: 1.5rem;
 }
@@ -678,8 +677,6 @@ footer .social a:hover{
     margin-left: 3rem;
     margin-right: 3rem;
   }
-
-  
 
 
   /*services*/
