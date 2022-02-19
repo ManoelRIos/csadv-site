@@ -349,6 +349,7 @@ nav.show div.icon-close{
   border-radius: 0.25rem;
 }
 #about .text{
+  text-align: justify;
   margin-left:1.5rem;
   margin-right: 1.5rem;
 }
@@ -369,7 +370,6 @@ nav.show div.icon-close{
 }
 
  .card:hover{
-  background: var(--base-color);
   border-radius: .25rem .25rem 0 0;
   text-align: center;
   cursor: pointer;
@@ -382,15 +382,6 @@ nav.show div.icon-close{
   font-size:5rem;
   color: var(--base-color);
 }
-
-.card:hover i{
-  color: var(--base-color-second);
-}
-
-.card:hover h3{
-  color: var(--body-color);
-}
-
 .card .title {
   font-size:1.5rem;
   margin-bottom:0.75rem;
@@ -403,6 +394,7 @@ nav.show div.icon-close{
 }
 
 #testimonials .container {
+  width: 90%;
   margin-left: 0;
   margin-right: 0;
 }
@@ -686,6 +678,8 @@ footer .social a:hover{
     margin-left: 3rem;
     margin-right: 3rem;
   }
+
+  
 
 
   /*services*/
