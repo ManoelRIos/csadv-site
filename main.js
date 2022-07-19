@@ -38,8 +38,12 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
-  mousewheel: {
-    releaseOnEdges: true,	
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000
   },
   // Navigation arrows
   keyboard: true,

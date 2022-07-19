@@ -559,7 +559,7 @@ footer .social a:hover{
 }
 
 /* large devices: 992 > */
-@media(min-width: 992px){ 
+@media(min-width: 992px){
   :root{
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
@@ -660,7 +660,7 @@ footer .social a:hover{
 
 
 /* large devices: 767 > */
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   :root{
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
@@ -678,7 +678,9 @@ footer .social a:hover{
     margin-right: 3rem;
   }
 
-
+#testimonials .container{
+    width: 100%;
+}
   /*services*/
   
 }
