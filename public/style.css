@@ -367,6 +367,7 @@ nav.show div.icon-close{
   border-radius: .25rem .25rem 0 0;
   text-align: center;
   cursor: pointer; 
+  transition: .3s;
 }
 
  .card:hover{
