@@ -146,7 +146,7 @@ body {
 /*------LOGO---------*/
 .logo img {
   padding-top: 0.3rem;
-  width: 45%;
+  width: 35%;
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
 }
